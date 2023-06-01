@@ -7,19 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Slackside+One&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Selection Sorting</h1>
+<h1>About</h1>
 <h3>---</h3>
 
-<h2>What is Selection Sort</h2>
-<p>Selection sort is an in-place comparison sorting algorithm. It has an O(n²) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort.</p>
-
-<h2>Complexity</h2>
-<h3>O(n^2)</h3>
-
-<h2>Examples</h2>
-<p></p>
-
-<h2>Advantages of Selection Sort</h2>
-
-<h2>Disadvantages of Selection Sort</h2>
+<h2>How the Visualization Was Made</h2>
 </body>

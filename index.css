@@ -25,7 +25,7 @@
    padding: 0;
 /*can be applied to all of the html elements*/
 /*FIX THE FONT FAMILY TO THE REAL ONE OR CHOSEN ONE*/
-   font-family: 'Poppins', sans-serif;
+font-family: 'Palette Mosaic', cursive;
 /*the second part of the font from google!!*/
 }
 
@@ -87,7 +87,7 @@ nav img{
    content: '';
    width: 0%;
    height: 2px;
-   background: #6E70AC;
+   background: #ffffff;
    display: block;
    margin: auto;
    transition: 0.5s;
@@ -98,3 +98,8 @@ nav img{
 }
 /*to make the text into the center of the website*/
 
+/*
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Slackside One', cursive;
+*/
