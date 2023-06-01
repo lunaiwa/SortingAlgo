@@ -21,14 +21,9 @@
 <h1>Bubble Sorting</h1>
 <h3>---</h3>
 
-<h2>What is Bubble Sort</h2>
+<h2>What is Bubble Sort ?</h2>
 <p>Bubble sort is an algorithm that repeatedly steps through the input list element by element, comparing the current element with the one after it, swapping their values if needed.</p>
 
-<h2>Complexity</h2>
-<h3>O(1)</h3>
-
-<h2>Examples</h2>
-<p></p>
 <pre><code>
 def bubble_sort(arr):
     n = len(arr)
@@ -44,7 +39,11 @@ def bubble_sort(arr):
         arr[j], arr[j + 1] = arr[j + 1], arr[j]
 </code></pre>
 
+<h2>Complexity</h2>
+<h3>O(1)</h3>
 
+<h2>Examples</h2>
+<p></p>
 
 <h2>Advantages of Bubble Sort</h2>
 

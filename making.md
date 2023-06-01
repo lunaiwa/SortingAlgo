@@ -10,5 +10,7 @@
 <h1>About</h1>
 <h3>---</h3>
 
+<h2>Code Blocks ?</h2>
+
 <h2>How the Visualization Was Made</h2>
 </body>

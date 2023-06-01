@@ -33,6 +33,10 @@ p {
     font-family: 'Slackside One', cursive;
     font-size: 25px;
     padding: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    max-width: 900px; 
+    margin: 0 auto;
 }
 /*Coding Blacks*/
 pre {
