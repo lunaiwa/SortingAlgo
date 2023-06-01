@@ -1,12 +1,12 @@
 body {
-    background-color: #F0B9C5;
+    background-color: #2f4454;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 300px;
 }
 /*Title of the page*/
 h1{
-    color:black;
+    color:#ffff;
     font-family: 'Palette Mosaic', cursive;
     font-size: 70px;
     text-align: center;
@@ -14,26 +14,27 @@ h1{
 }
 /*Subtitles on the Page*/
 h2{
-    color:rgb(110, 112, 172);
+    color:#da7b93;
     font-family: 'Palette Mosaic', cursive;
     font-size: 30px;
     text-align: center;
 }
 /*Line and Page Seperation*/
 h3{
-    color:rgb(255, 255, 255);
+    color:#ffff;
     font-family: 'Palette Mosaic', cursive;
     font-size: 50px;
     text-align: center;
     padding: 10px;
+    margin: 20px;
 }
 /*Descriptions under the Subtitles*/
 p {
-    color: rgb(110, 112, 172);
+    color: #599192;
     font-family: 'Slackside One', cursive;
     font-size: 25px;
     padding: 30px;
-    text-align: center;
+    text-align: justify;
     letter-spacing: -1px;
     max-width: 900px; 
     margin: 0 auto;

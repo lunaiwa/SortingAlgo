@@ -28,13 +28,12 @@
 font-family: 'Palette Mosaic', cursive;
 /*the second part of the font from google!!*/
 }
-
 /*BACKGROUND colors and images*/
 .header{
    min-height: 10vh;
    width: 100%;
 /*linear gradient is how the background goes from the pink to the purple*/
-   background-color: #F0B9C5;
+   background-color: #2f4454;
    background-position: center;
    background-size: cover;
    position: relative;
@@ -47,7 +46,7 @@ font-family: 'Palette Mosaic', cursive;
    padding-top: 200px;
    padding-bottom: 360px;
 /*linear gradient is how the background goes from the pink to the purple*/
-   background-image: linear-gradient(#F0B9C5,#C48FC1);
+   background-image: linear-gradient(#2f4454,#1c3334);
    background-position: center;
    background-size: cover;
    position: relative;
