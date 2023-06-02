@@ -119,9 +119,19 @@ Sorted array: [11, 12, 22, 25, 64]
 <br>
 <br>
 <b>4. Complexity in Linked Lists:</b> While merge sort performs efficiently on arrays, it can be less efficient when sorting linked lists due to the additional overhead of merging the linked lists. Traversing and merging linked lists require extra operations and memory accesses, making it less desirable for sorting linked list data structures.
-
 </p>
 
+<div class="chart">
+<div id="chart-container"></div>
+</div>
+<div class="button-container">
+<button id="start-btn" onclick="startSorting()"><span class="material-symbols-outlined">play_arrow</span></button>
+<button id="pause-btn" onclick="pauseSorting()"><span class="material-symbols-outlined">pause</span></button>
+<button id="reset-btn" onclick="resetSorting()"><span class="material-symbols-outlined">replay</span></button>
+</div>
+<!--Script for the Chart JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+<script src="merge.js"></script>
 
 
 </body>

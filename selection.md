@@ -96,5 +96,16 @@ Sorted array: [11, 12, 22, 25, 64]
 <b>4. Limited Optimizations:</b> Selection sort does not offer many opportunities for optimization. It always scans the entire unsorted portion of the list to find the minimum element and performs a swap. Other sorting algorithms, such as quicksort or mergesort, have better optimizations and can achieve faster sorting times.
 </p>
 
+<div class="chart">
+<div id="chart-container"></div>
+</div>
+<div class="button-container">
+<button id="start-btn" onclick="startSorting()"><span class="material-symbols-outlined">play_arrow</span></button>
+<button id="pause-btn" onclick="pauseSorting()"><span class="material-symbols-outlined">pause</span></button>
+<button id="reset-btn" onclick="resetSorting()"><span class="material-symbols-outlined">replay</span></button>
+</div>
+<!--Script for the Chart JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+<script src="selection.js"></script>
 
 </body>
