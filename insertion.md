@@ -62,5 +62,35 @@ Sorted array: [11, 12, 22, 25, 64]
 
 <h2>Advantages of Insertion Sort</h2>
 
+<p>
+<b>1. Simplicity:</b> Insertion sort is one of the simplest sorting algorithms to understand and implement. It involves basic operations like comparing and shifting elements.
+<br>
+<br>
+<b>2. Efficient for Small Lists or Partially Sorted Lists:</b> Insertion sort performs well on small lists or lists that are already partially sorted. It has an average-case time complexity of O(n^2), but it can have a best-case time complexity of O(n) for lists that are already sorted or nearly sorted.
+<br>
+<br>
+<b>3. Adaptive:</b> Insertion sort is an adaptive algorithm, meaning it efficiently handles data sets that are partially sorted. It minimizes the number of comparisons and shifts needed to insert elements in the correct position.
+<br>
+<br>
+<b>4. Space Efficiency:</b> Insertion sort operates in-place, meaning it does not require extra memory beyond the original list to perform the sorting. It only requires a constant amount of additional space for temporary variable storage.
+</p>
+
 <h2>Disadvantages of Insertion Sort</h2>
+
+<p>
+<b>1. Inefficiency for Large Lists:</b> Insertion sort has an average and worst-case time complexity of O(n^2), where n is the number of elements. This makes it inefficient for large data sets. It performs a significant number of comparisons and shifts, leading to slower performance compared to more advanced sorting algorithms like quicksort or mergesort.
+<br>
+<br>
+<b>2. Lack of Stability:</b> Insertion sort is not inherently stable, but it can be modified to maintain stability. Stability refers to the preservation of the relative order of equal elements during the sorting process. By default, insertion sort may shift equal elements, potentially changing their original order.
+<br>
+<br>
+<b>3. Limited Optimizations:</b> Insertion sort does not offer as many opportunities for optimization as some other sorting algorithms. It has a relatively fixed structure where each element is compared and inserted into its correct position sequentially. Although some variations can improve performance, it is not as versatile in terms of optimization as more complex algorithms.
+
+</p>
+
+
+
+
+
+
 </body>

@@ -85,5 +85,34 @@ Sorted array: [11, 12, 22, 25, 64]
 
 <h2>Advantages of Merge Sort</h2>
 
+<p>
+<b>1. Efficiency:</b> Merge sort has a time complexity of O(n log n) in all cases, making it one of the most efficient comparison-based sorting algorithms. It performs well even for large data sets, making it suitable for handling a significant number of elements.
+<br>
+<br>
+<b>2. Stability:</b> Merge sort is a stable sorting algorithm, meaning it preserves the relative order of equal elements. This makes it useful in scenarios where maintaining the original order of equal elements is important.
+<br>
+<br>
+<b>3. Guaranteed Worst-Case Performance:</b> Merge sort guarantees a worst-case time complexity of O(n log n), regardless of the initial order of the input array. This reliability makes it a preferable choice when a consistent and predictable performance is required.
+<br>
+<br>
+<b>4. Parallelization Potential:</b> Merge sort lends itself well to parallelization. The divide-and-conquer approach allows for easy distribution of the sorting process across multiple processors or threads, potentially leading to faster sorting times in parallel computing environments.
+</p>
+
 <h2>Disadvantages of Merge Sort</h2>
+<p>
+<b>1. Space Complexity:</b> Merge sort requires additional memory space to store the temporary subarrays during the sorting and merging process. This additional space requirement can be a disadvantage for sorting large arrays with limited memory availability.
+<br>
+<br>
+<b>2. Non-In-Place Sorting:</b> Merge sort is not an in-place sorting algorithm. It requires additional space proportional to the size of the input array to perform the merging process. As a result, the memory requirement of merge sort can be a limiting factor in memory-constrained environments.
+<br>
+<br>
+<b>3. Recursive Nature:</b> Merge sort relies on recursion, which may lead to function call overhead and potentially cause performance issues for very large input arrays. Iterative sorting algorithms like quicksort might be more efficient in terms of memory usage and function call overhead.
+<br>
+<br>
+<b>4. Complexity in Linked Lists:</b> While merge sort performs efficiently on arrays, it can be less efficient when sorting linked lists due to the additional overhead of merging the linked lists. Traversing and merging linked lists require extra operations and memory accesses, making it less desirable for sorting linked list data structures.
+
+</p>
+
+
+
 </body>
