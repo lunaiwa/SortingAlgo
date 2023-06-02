@@ -30,5 +30,11 @@
 print('that is how i made this!')
 </code></pre>
 
-<h2>How the Visualization Was Made</h2>
+<h2>Icons and Fonts</h2>
+
+<p>
+The fonts chakra petch, palette mosaic, and slackside one is all from the google.fonts.com so are the icons used for the sorting charts.
+</p>
+
+
 </body>

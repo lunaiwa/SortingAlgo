@@ -1,38 +1,45 @@
-var data;
-var colors;
-var sortingInterval;
-var currentIndex;
+var data; // Array to store the numbers to be sorted
+var colors; // Array to store the colors of the bars
+var sortingInterval; // Interval ID for the sorting process
+var currentIndex; // Current index being processed
 
-// Function to generate random list of numbers and colors
+// Function to generate a random list of numbers and colors
 function generateRandomList(size, min, max) {
-    var list = [];
-    var colorList = [];
+    var list = []; // Array to store the generated numbers
+    var colorList = []; // Array to store the generated colors
+
+    // Generate 'size' random numbers within the range [min, max]
     for (var i = 0; i < size; i++) {
         var number = Math.floor(Math.random() * (max - min + 1)) + min;
-        list.push(number);
-        colorList.push(getRandomColor());
+        list.push(number); // Add the number to the list
+
+        colorList.push(getRandomColor()); // Add a random color to the color list
     }
-    return [list, colorList];
+
+    return [list, colorList]; // Return the generated numbers and colors as an array
 }
 
 // Function to generate a random color
 function getRandomColor() {
     var letters = "0123456789ABCDEF";
     var color = "#";
+
+    // Generate a 6-digit hexadecimal color code
     for (var i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
-    return color;
+
+    return color; // Return the generated color
 }
 
-// Function to visualize Selection Sort
+// Function to visualize Selection Sort algorithm
 function selectionSortVisualization() {
-    var n = data.length;
-    var chartContainer = d3.select("#chart-container");
-    var barWidth = 30;
-    var barSpacing = 5;
+    var n = data.length; // Number of elements in the data array
+    var chartContainer = d3.select("#chart-container"); // Select the chart container element
+    var barWidth = 30; // Width of each bar
+    var barSpacing = 5; // Spacing between bars
 
-    chartContainer.selectAll("*").remove();
+    chartContainer.selectAll("*").remove(); // Clear the chart container
 
     var svg = chartContainer.append("svg")
         .attr("width", (barWidth + barSpacing) * n)
@@ -69,10 +76,12 @@ function selectionSortVisualization() {
                     }
                 }
 
+                // Swap the current element with the minimum element
                 var temp = data[currentIndex];
                 data[currentIndex] = data[minIndex];
                 data[minIndex] = temp;
 
+                // Swap the color of the bars accordingly
                 var tempColor = colors[currentIndex];
                 colors[currentIndex] = colors[minIndex];
                 colors[minIndex] = tempColor;
@@ -113,9 +122,12 @@ function pauseSorting() {
 // Function to reset the sorting process
 function resetSorting() {
     pauseSorting();
+
+    // Generate a new random list of numbers and colors
     var generatedData = generateRandomList(10, 1, 50);
-    data = generatedData[0];
-    colors = generatedData[1];
+    data = generatedData[0]; // Update the data array
+    colors = generatedData[1]; // Update the colors array
+
     if (data.length > 1) {
         selectionSortVisualization();
     }
@@ -124,7 +136,8 @@ function resetSorting() {
 // On page load
 document.addEventListener("DOMContentLoaded", function(event) {
     var chartContainer = document.getElementById("chart-container");
-    if (chartContainer.innerHTML.trim() === "") {
-        resetSorting();
+
+    if (chartContainer.innerHTML.trim() === "") { // If the chart container is empty
+        resetSorting(); // Reset the sorting process
     }
 });
