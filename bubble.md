@@ -16,6 +16,15 @@
 <!--To Start the Highlight.js-->
 <script>hljs.initHighlightingOnLoad();</script>
 
+<!--Icon Buttons-->
+<!--Icons can be found at fonts.google.com/icons, they have a large selection of icons which you can choose from and select to add into your project-->
+<!--Play Button-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!--Pause Button-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<!--Reset Button-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 <body>
 <h1>Bubble Sorting</h1>
@@ -81,5 +90,17 @@ Sorted array: [11, 12, 22, 25, 34, 64, 90]
 <br>
 <br>
 <b>3. Lack of Stability:</b> Bubble sort is not a stable sorting algorithm. Stability refers to the preservation of the relative order of equal elements during the sorting process. Bubble sort may swap adjacent elements even if they are equal, potentially changing their original order.</p>
+
+<div class="chart">
+<div id="chart-container"></div>
+</div>
+<div class="button-container">
+<button id="start-btn" onclick="startSorting()"><span class="material-symbols-outlined">play_arrow</span></button>
+<button id="pause-btn" onclick="pauseSorting()"><span class="material-symbols-outlined">pause</span></button>
+<button id="reset-btn" onclick="resetSorting()"><span class="material-symbols-outlined">replay</span></button>
+</div>
+<!--Script for the Chart JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+<script src="bubble.js"></script>
 
 </body>

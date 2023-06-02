@@ -61,3 +61,30 @@ pre code {
     padding-right: 10px;
     background-image: linear-gradient(180deg, #FDE0CA, white);
 }
+
+/*Sorting Chart Containers*/
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chart-container {
+    width: 600px;
+    height: 400px;
+}
+
+button {
+    margin: 10px;
+    display: inline-block;
+}
+.button-container {
+    display: flex;
+}
+
+.button-container button {
+    margin: 0 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
